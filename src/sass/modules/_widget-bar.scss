@@ -8,7 +8,7 @@ $wb-tHeight: ($wbHeight - 20px);
 	margin-bottom: 20px;
 	height: $wbHeight;
 	button {
-		margin-top: 30px;
+		margin-top: 29px;
 	}
 }
 
@@ -17,13 +17,38 @@ $wb-tHeight: ($wbHeight - 20px);
 	display: block;
 	background-size: cover;
 	position: relative;
-
 	h2.rough {
-	   margin-top: 100px;
+	   padding-top: 100px;
 	}
 	h3.rough {
 		font-family: $ff--base;
 		font-size: 12px;
 		font-weight: bold;
+	}
+	.rough {
+	   padding-left: 10px;
+	}
+}
+.widget-bar__message {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: white;
+	z-index: 1;
+	display: table;
+	left: 20px;
+	right: 0;
+	height: $wb-tHeight;
+	width: calc(100% - 20px);
+	opacity: 0;
+	@include transition(all 300ms ease);
+	&.active {
+		opacity: 1;
+		@include transition(all 300ms ease);
+	}
+	p  {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
 	}
 }

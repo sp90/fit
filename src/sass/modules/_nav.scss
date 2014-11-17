@@ -18,11 +18,12 @@ nav {
 	a {
 		background: $cg50;
 		padding: 10px 20px;
-		border-right: 1px solid $cg20;
-		border-left: 1px solid $cg80;
+		border-left: 1px solid $cg20;
+		border-right: 1px solid $cg80;
 		display: inline-block;
+		float: left;
 		color: $cg20;
-		margin-right: -4px;
+		//margin-right: -3px;
 		@include transition(all 300ms ease);
 		&:first-child {
 			border-left: none;
@@ -33,7 +34,7 @@ nav {
 		&:hover, 
 		&.active {
 			@include linear-gradient($cg80, $cg50);
-			@include transition(all 300ms ease);
+			@include transition(all 300ms ease); 
 		}
 	}
 }

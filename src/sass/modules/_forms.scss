@@ -1,0 +1,25 @@
+.form--team-booking {
+	width:50%;
+	input, 
+	select {
+		border-radius: 0;
+		margin-bottom: 10px;
+		background: white;
+		@include appearance(none);
+	}
+	.select {
+		display: block;
+		position: relative;
+		span {
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 10px solid #333333;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			position: absolute;
+			top: 11px;
+			right: 6px;
+		}
+	}
+}

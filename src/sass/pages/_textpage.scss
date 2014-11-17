@@ -1,0 +1,23 @@
+.textpage {
+	padding: 20px;
+	box-shadow: 0 0 15px rgba($cg20, .5);
+	background: white;
+	margin-bottom: 20px;
+	border-radius: 4px;
+
+	h4 {
+		font-size: $fs--p;
+		font-weight: bold;
+		margin: 20px 0;
+	}
+	h3 {
+		text-transform: uppercase;
+	}
+	.sidebar {
+		ul {
+			padding-left: 20px;
+			list-style: none;
+			font-weight: bold;
+		}
+	}
+}

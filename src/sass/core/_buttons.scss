@@ -1,6 +1,13 @@
 button {
-	background: $color--primary;
+	@include linear-gradient($color--primary, darken($color--primary, 20%));
 	border: none;
 	padding: 5px 10px;
 	display: inline-block;
+}
+h2.button {
+	@include linear-gradient($cg80, $cg50);
+	font-weight: bold;
+	border: 1px solid $cg50;
+	padding: 15px;
+	border-radius: 4px;
 }

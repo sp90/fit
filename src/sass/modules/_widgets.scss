@@ -1,0 +1,45 @@
+.widget--side {
+	margin-bottom: 20px;
+	img {
+		width: 100%;
+		height: auto;
+		box-shadow: 0 0 6px rgba($cg20, .5);
+		margin-bottom: 5px;
+	}
+	a {
+		margin-top: 5px;
+		display: block;
+	}
+}
+.widget--image {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 20px;
+	img {
+		width: 100%;
+		height: auto;
+		box-shadow: 0 0 6px rgba($cg20, .5);
+	}
+	a {
+		display: block;
+	}
+	.content {
+		padding: 10px;
+		width: 100%;
+		@include pos(0 0 0 0);
+		span {
+			display: inline-block;
+			background: $color--primary;
+			color: $cg20;
+			font-size: 24px;
+			line-height: 26px;
+			margin-bottom: 5px;
+			padding: 2px 4px;
+			text-transform: uppercase;
+			&:first-child {
+				color: white;
+			}
+		}
+	}
+}

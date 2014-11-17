@@ -12,6 +12,10 @@ html {
   /*
     background: $bg-color;
   */
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-color: white;
+  background-position: center center;
 }
 body {
   margin: 0;
@@ -20,4 +24,9 @@ body {
 .wrapper {
 	max-width: 980px;
 	margin: 0 auto;
+}
+
+#logo {
+  position: relative;
+  top: 20px;
 }

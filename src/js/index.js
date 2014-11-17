@@ -17,6 +17,8 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 
     /* How to require states */
     require('./states/index')($stateProvider);
+    require('./states/membership')($stateProvider);
+    require('./states/team')($stateProvider);
 }]);
 
 // Access the $rootScope

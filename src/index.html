@@ -22,17 +22,17 @@
         <div class="wrapper">
             <header class="grid">
                 <div class="grid__item three-tenths">
-                    <img src="#" alt="logo">
+                    <img id="logo" src="/assets/logo.png" alt="logo">
                 </div>
                 <div class="grid__item seven-tenths">
                     <nav class="nav__sub">
-                        <a href="#">Til forsiden</a>
-                        <a href="#">Kontakt</a>
+                        <a ui-sref="index" ui-sref-active="active">Til forsiden</a>
+                        <a ui-sref="contact" ui-sref-active="active">Kontakt</a>
                     </nav>
                     <nav class="nav__main">
                         <a href="#">Centeret</a>
-                        <a href="#">Medlemskab</a>
-                        <a href="#">Hold</a>
+                        <a ui-sref="membership" ui-sref-active="active">Medlemskab</a>
+                        <a ui-sref="team" ui-sref-active="active">Hold</a>
                         <a href="#">Tider</a>
                         <a href="#">Om always fit</a>
                         <a href="#">Spørgsmål</a>
@@ -43,7 +43,7 @@
             <main ui-view ng-animate="'animate'"></main>
             
             <footer>
-                Always Fit C All rights reserved <span>CVR nr. 23700532</span>
+                Always Fit &copy; All rights reserved <span>CVR nr. 23700532</span>
             </footer>
         </div>
 
