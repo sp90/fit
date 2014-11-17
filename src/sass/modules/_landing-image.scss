@@ -1,0 +1,14 @@
+.landing-image {
+	height: 400px;
+	display: table;
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba($cg20, .5);
+	margin: 0 0 20px;
+	background-size: cover;
+	h1 {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,29 @@
+$wbHeight: 203px;
+$wb-tHeight: ($wbHeight - 20px);
+
+.widget-bar {
+	padding: 10px;
+	box-shadow: 0 0 8px rgba($cg20, 0.5);
+	border-radius: 4px;
+	margin-bottom: 20px;
+	height: $wbHeight;
+	button {
+		margin-top: 30px;
+	}
+}
+
+.widget-bar__tile {
+	height: $wb-tHeight;
+	display: block;
+	background-size: cover;
+	position: relative;
+
+	h2.rough {
+	   margin-top: 100px;
+	}
+	h3.rough {
+		font-family: $ff--base;
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
