@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="project" ng-class="containerClass">
+    <head>
+        <!-- Basic meta tags for mobile & desktop-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- Meta tags for sharing -->
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:title" content="">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        
+        <!-- Also for sharing change depending on your content 
+            Basics: 
+                * article
+                * blog
+                * website
+            See more at "http://stackoverflow.com/questions/9275457/facebook-ogtype-meta-tags-should-i-just-make-up-my-own"
+        -->
+        <meta property="og:type" content="article">
+        
+        <title>Project</title>
+        <link rel="icon" type="image/ico" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="/css/all.critical.css">
+    </head>
+    <body>
+
+        <main ui-view ng-animate="'animate'"></main>
+
+        <!-- Include script after for better loadspeed -->
+        <link rel="stylesheet" href="/css/all.css">
+        <script src="/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "bower install",
+    "postinstall": "grunt build",
+    "start": "node index.js"
+  },
+  "contributors": [
+    "Simon Dragsbæk P. <dev@nomis.dk>"
+  ],
+  "private": false,
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "repository": "https://github.com/sp90/frontend-angular-boilerplate",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./bower_components/jquery/dist/jquery.min.js",
+    "angular": "./bower_components/angular/angular.min.js",
+    "angular-resource": "./bower_components/angular-resource/angular-resource.min.js",
+    "angular-ui-router": "./bower_components/ui-router/release/angular-ui-router.min.js",
+    "angular-animate": "./bower_components/angular-animate/angular-animate.min.js"
+  },
+  "browserify-shim": {
+    "jquery": {
+      "exports": "$"
+    },
+    "angular": {
+      "exports": "angular",
+      "depends": "jquery"
+    }
+  },
+  "devDependencies": {
+    "bower": "^1.3.10",
+    "browserify": "^5.9.3",
+    "browserify-shim": "^3.7.0",
+    "chalk": "^0.5.1",
+    "compression": "^1.2.0",
+    "concat-stream": "^1.4.6",
+    "express": "^4.9.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.0.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-imagemin": "^0.9.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-critical": "0.0.3",
+    "grunt-sass": "^0.16.1",
+    "load-grunt-tasks": "^0.6.0",
+    "lodash": "^2.4.1",
+    "mold-source-map": "^0.3.0",
+    "morgan": "^1.3.1",
+    "should": "^4.0.4",
+    "streamifier": "^0.1.0"
+  }
+}

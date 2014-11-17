@@ -1,0 +1,26 @@
+$fs--h1         : 32px !default;
+$fs--h2       	: 24px !default;
+$fs--h3       	: 18px !default;
+$fs--h4       	: 15px !default;
+$fs--h5       	: 12px !default;
+$fs--h6       	: 11px !default;
+$fs--p			: 12px !default;
+
+$lh--h1         : 36px !default;
+$lh--h2       	: 28px !default;
+$lh--h3       	: 20px !default;
+$lh--h4       	: 18px !default;
+$lh--h5       	: 14px !default;
+$lh--h6       	: 13px !default;
+$lh--p			: 14px !default;
+
+$ff--fallback  : 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+$ff--base      : $ff--fallback !default;
+$ff--bold      : $ff--fallback !default;
+
+//
+// Custom font mixin - for default usage of font styling
+// 
+@mixin font($size: $fs--p, $line-height: $lh--p, $weight: normal, $family: $ff--base){
+  font: $weight #{$size}/#{$line-height} #{$family};
+} 
