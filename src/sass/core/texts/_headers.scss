@@ -9,7 +9,7 @@
 
 */
 
-$normalColor: #323232;
+$normalColor: $cg20;
 $invertColor: white;
 
 h1,h2,h3,h4,h5,h6,
@@ -21,7 +21,6 @@ h1,h2,h3,h4,h5,h6,
 h1,.h1 {
    @include font($fs--h1, $lh--h1, normal, $ff--base);
    color: $normalColor;
-   text-transform: uppercase;
    &.b {
       @include font($fs--h1, $lh--h1, bold, $ff--bold);
    }
@@ -77,5 +76,20 @@ h6,.h6 {
    }
    &.invert {
       color: $invertColor;
+   }
+}
+h1.rough span {
+   padding: 18px 8px 9px;
+}
+h2.rough span {
+   padding: 8px 8px 2px;
+}
+.rough {
+   font-family: $ff--rough;
+   margin-bottom: 3px;
+   span {
+      padding: 2px 4px;
+      display: inline-block;
+      background: $color--primary;
    }
 }

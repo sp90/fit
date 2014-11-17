@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "fit",
   "version": "0.0.1",
-  "description": "project",
+  "description": "fit",
   "main": "index.js",
   "scripts": {
     "preinstall": "bower install",

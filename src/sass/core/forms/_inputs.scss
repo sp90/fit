@@ -1,9 +1,20 @@
+$inputSpacer: 4px;
+
 input, 
 textarea {
+	width: 100%;
+	border: 1px solid $color--primary;
+	border-radius: 4px;
+	padding: $inputSpacer;
+	margin: $inputSpacer 0;
     @include placeholder { 
         color: #fff;
     }
 	&:focus {
 		outline:none;
 	}
+}
+label {
+	font-weight: bold;
+	padding: $inputSpacer 0;
 }

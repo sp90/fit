@@ -1,4 +1,4 @@
-$fs--h1         : 32px !default;
+$fs--h1         : 48px !default;
 $fs--h2       	: 24px !default;
 $fs--h3       	: 18px !default;
 $fs--h4       	: 15px !default;
@@ -14,9 +14,11 @@ $lh--h5       	: 14px !default;
 $lh--h6       	: 13px !default;
 $lh--p			: 14px !default;
 
-$ff--fallback  : 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+$ff--fallback  : 'Verdana', Verdana, Arial, sans-serif;
 $ff--base      : $ff--fallback !default;
 $ff--bold      : $ff--fallback !default;
+$ff--rough     : $skyfall, $ff--fallback !default;
+
 
 //
 // Custom font mixin - for default usage of font styling

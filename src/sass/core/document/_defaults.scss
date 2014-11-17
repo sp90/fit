@@ -1,11 +1,11 @@
-@include scrollbar(5px, $color__grey--85);
+@include scrollbar(5px, $color__grey--80);
 
 * {
 	box-sizing: border-box; // For responsive
 }
 html, body {
   height: 100%; // Enables elements to have 100% height
-  overflow-y: auto; // Avoids horizontal scrolling
+  overflow-y: auto; // set scrolling on overflow vertically
   overflow-x: hidden; // Avoids horizontal scrolling
 }
 html {
@@ -14,5 +14,10 @@ html {
   */
 }
 body {
-  @include font($fs--p, normal, $ff--base); // Fallback for all non styled texts
+  margin: 0;
+  @include font($fs--p, $lh--p, normal, $ff--base); // Fallback for all non styled texts
+}
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
 }

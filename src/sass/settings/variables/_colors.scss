@@ -6,7 +6,7 @@
  * Primary color
  *
  */
-$color--primary               : #b30030;
+$color--primary               : #0ced0c;
 $color--primary--hover        : darken($color__primary, 20);
 $color--primary--active       : darken($color__primary, 10);
 
@@ -14,10 +14,10 @@ $color--primary--active       : darken($color__primary, 10);
 /*
  * Secondary color
  *
- */
+ 
 $color--secondary             : rgb(132, 0, 135);
 $color--secondary--hover      : darken($color__secondary, 20);
-$color--secondary--active     : darken($color__secondary, 10);
+$color--secondary--active     : darken($color__secondary, 10);*/
 
 
 /*
@@ -28,7 +28,14 @@ $color--grey--10			  : #292929;
 $color--grey--15              : #2f2f2f;
 $color--grey--20			  : #333333;
 $color--grey--35              : #5c5c5c;
-$color--grey--50              : #9B9B9B;
-$color--grey--85              : #d6d6d6;
-$color--grey--90              : #ebebeb;
+$color--grey--50              : #c2c2c2;
+$color--grey--75              : #d6d6d6;
+$color--grey--80              : #ededed;
+$color--grey--85              : #ededed;
 $color--grey--95              : #f1f1f1; 
+
+/* Shorthands */
+
+$cg20: $color--grey--20;
+$cg50: $color--grey--50;
+$cg80: $color--grey--80;

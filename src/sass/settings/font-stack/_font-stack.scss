@@ -46,3 +46,16 @@
 		and so on.
 
 \*------------------------------------*/
+
+$fontFolderPath		: '../assets/fonts/'; // font path
+$skyfall 			: 'skyfall'; 			  // font name
+$fontello 			: 'fontello'; 			  // font name
+
+//Icons
+@include font-face-custom($fontFolderPath, $fontello, fontello, 400, normal);
+
+//Custom header font
+@include font-face-custom($fontFolderPath, $skyfall, skyfall, 400, normal);
+
+
+
